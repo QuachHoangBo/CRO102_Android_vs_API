@@ -4,55 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#13BCA2"
     tools:context=".lab1.FireBase">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="141dp"
         android:layout_height="176dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="227dp"
-        android:layout_marginEnd="109dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logiFireBase" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/loginEmail"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="LOGIN WITH EMAIL"
+        android:layout_marginTop="36dp"
+        android:text="Login with Email"
         app:icon="@drawable/iconGmail"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/loginPhoneNumer"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
-        android:text="Button"
+        android:layout_marginBottom="180dp"
+        android:gravity="center_vertical"
+        android:text="Login with Phone Number"
+        app:icon="@drawable/iconPhone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button2" />
+        app:layout_constraintEnd_toEndOf="@+id/loginEmail"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/loginEmail"
+        app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+        app:layout_constraintVertical_bias="0.267" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:text="FireBase"
-        android:textColor="#000000"
+        android:textColor="#DAD8D8"
         android:textSize="30px"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

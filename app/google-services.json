@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "327439871149",
+    "project_id": "and103---android-vs-api",
+    "storage_bucket": "and103---android-vs-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327439871149:android:9e7e9c0b82b3a3a6022a24",
+        "android_client_info": {
+          "package_name": "fpoly.edu.bophpd0840"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT4y8fxEG57TK6muy5YlKg_8Upx2DIo6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
