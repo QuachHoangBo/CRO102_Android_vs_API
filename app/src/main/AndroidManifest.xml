@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CRO102_Android_vs_API"
         tools:targetApi="31">
         <activity
+            android:name=".lab1.OTPPhoneNumber"
+            android:exported="false" />
+        <activity
             android:name=".lab1.LogOut"
             android:exported="false" />
         <activity

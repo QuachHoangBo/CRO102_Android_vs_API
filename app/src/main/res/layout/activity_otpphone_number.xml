@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF8383"
+    tools:context=".lab1.OTPPhoneNumber">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="1dp"
+        android:background="#3498db"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PhoneNumber:"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtOTPPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="+84 ....."
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D5D3D3" />
+
+        <Button
+            android:id="@+id/btnGetOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Get OTP" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="OTP:"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D5D3D3" />
+
+        <EditText
+            android:id="@+id/edtOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="123ABC"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D5D3D3" />
+
+        <Button
+            android:id="@+id/btnLoginOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Login" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Login With PhoneNumber"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,10 +20,18 @@ public class FireBase extends AppCompatActivity {
         googleAuth = findViewById(R.id.btnloginWithEmail);
         phoneAuth = findViewById(R.id.btnloginWithPhoneNumer);
 
-        phoneAuth.setOnClickListener(new View.OnClickListener() {
+        googleAuth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FireBase.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        phoneAuth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FireBase.this, OTPPhoneNumber.class);
                 startActivity(intent);
             }
         });

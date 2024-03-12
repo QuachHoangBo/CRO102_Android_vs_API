@@ -22,6 +22,9 @@ public class Login extends AppCompatActivity {
     Button btnLogin,btnRegister;
     private FirebaseAuth auth;
     EditText edtEmail, edtPassword;
+
+    String email,password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,13 +36,12 @@ public class Login extends AppCompatActivity {
         edtEmail = findViewById(R.id.edtEmailLogin);
         edtPassword = findViewById(R.id.edtPassLogin);
         auth = FirebaseAuth.getInstance();
-
-
-        String email= edtEmail.getText().toString();
-        String password= edtPassword.getText().toString();
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                email= edtEmail.getText().toString();
+                password= edtPassword.getText().toString();
+
                 auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

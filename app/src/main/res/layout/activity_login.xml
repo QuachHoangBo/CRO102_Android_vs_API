@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEDED"
+    android:background="#3498db"
     tools:context=".lab1.Login">
 
     <LinearLayout
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="1dp"
-        android:background="#DCDCDC"
+        android:background="#EF8383"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,7 @@
             android:fontFamily="monospace"
             android:gravity="center"
             android:text="Login with Us"
-            android:textColor="#1C1C1C"
+            android:textColor="#FFFFFF"
             android:textSize="40dp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -49,8 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
             android:text="Tên đăng nhập:"
-            android:textColor="#1C1C1C"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -59,19 +60,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:hint="Your Email...."
             android:inputType="text"
-            android:textColor="#1C1C1C" />
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
             android:text="Mật khẩu:"
-            android:textColor="#1C1C1C"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -79,10 +81,11 @@
             android:id="@+id/edtPassLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:hint="***************"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
 
@@ -103,6 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#3F51B5"
             android:text="Login" />
 
         <Button
@@ -111,6 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
+            android:backgroundTint="#3F51B5"
             android:text="SignUp" />
     </LinearLayout>
 
