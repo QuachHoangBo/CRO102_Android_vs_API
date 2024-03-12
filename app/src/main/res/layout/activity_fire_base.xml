@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/logiFireBase" />
 
     <Button
-        android:id="@+id/btnloginEmail"
+        android:id="@+id/btnloginWithEmail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/loginPhoneNumer"
+        android:id="@+id/btnloginWithPhoneNumer"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
@@ -38,10 +38,10 @@
         android:text="Login with Phone Number"
         app:icon="@drawable/iconPhone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnloginEmail"
+        app:layout_constraintEnd_toEndOf="@+id/btnloginWithEmail"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/btnloginEmail"
-        app:layout_constraintTop_toBottomOf="@+id/btnloginEmail"
+        app:layout_constraintStart_toStartOf="@+id/btnloginWithEmail"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginWithEmail"
         app:layout_constraintVertical_bias="0.267" />
 
     <TextView
