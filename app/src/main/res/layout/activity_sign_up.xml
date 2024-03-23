@@ -5,54 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="10dp"
-    android:background="#3498db"
+    android:background="#09BC8A"
     tools:context=".lab1.SignUp">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="1dp"
-        android:background="#EF8383"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:text="Sign up
-             for
-             new World"
-            android:textColor="#FFFFFF"
-            android:textSize="40dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="380dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <TextView
             android:id="@+id/textView7"
@@ -61,21 +27,21 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#FFFFFF"
             android:text="Tên đăng nhập:"
-            android:textColor="#FFFFFF"
+            android:textColor="#DCEDFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtEmailSighUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/input_layout"
             android:ems="10"
             android:hint="Your Email...."
             android:inputType="text"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D5D3D3" />
+            android:padding="10dp"
+            android:textColor="#172A3A" />
 
         <TextView
             android:id="@+id/textView3"
@@ -84,21 +50,21 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#FFFFFF"
             android:text="Mật khẩu:"
-            android:textColor="#FFFFFF"
+            android:textColor="#DCEDFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtPassSignUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/input_layout"
             android:ems="10"
             android:hint="***************"
             android:inputType="textPassword"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D5D3D3" />
+            android:padding="10dp"
+            android:textColor="#172A3A" />
 
         <TextView
             android:id="@+id/textView6"
@@ -107,32 +73,32 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#FFFFFF"
             android:text="Mật khẩu 2:"
-            android:textColor="#FFFFFF"
+            android:textColor="#DCEDFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtPassSignUp2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/input_layout"
             android:baselineAligned="false"
             android:ems="10"
             android:hint="***************"
             android:inputType="textPassword"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D5D3D3" />
+            android:padding="10dp"
+            android:textColor="#172A3A" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="358dp"
-        android:layout_height="74dp"
+        android:layout_height="120dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -140,19 +106,35 @@
 
         <Button
             android:id="@+id/btnSignUp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
-            android:text="SignUp" />
+            android:backgroundTint="#004346"
+            android:text="SignUp"
+            android:textColor="#DCEDFF" />
 
         <Button
             android:id="@+id/btnGoback"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
-            android:text="Go back" />
+            android:backgroundTint="#004346"
+            android:text="Go back"
+            android:textColor="#DCEDFF" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="SignUp"
+        android:textColor="#DCEDFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

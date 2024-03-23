@@ -4,29 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3498db"
+    android:background="@drawable/backgroud"
     tools:context=".lab1.FireBase">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="141dp"
-        android:layout_height="176dp"
-        android:layout_marginTop="180dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logiFireBase" />
 
     <Button
         android:id="@+id/btnloginWithEmail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="117dp"
+        android:backgroundTint="#004346"
         android:text="Login with Email"
-        app:icon="@drawable/iconGmail"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        android:textColor="#DCEDFF"
+        app:icon="@drawable/icon_gmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
@@ -34,9 +25,12 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
+        android:backgroundTint="#004346"
         android:gravity="center_vertical"
         android:text="Login with Phone Number"
-        app:icon="@drawable/iconPhone"
+        android:textColor="#DCEDFF"
+        android:textSize="14dp"
+        app:icon="@drawable/icon_phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnloginWithEmail"
         app:layout_constraintHorizontal_bias="0.512"
@@ -46,13 +40,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="FireBase"
-        android:textColor="#DAD8D8"
-        android:textSize="30px"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="The best app for your plants"
+        android:textColor="#DCEDFF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

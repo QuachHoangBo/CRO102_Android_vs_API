@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EF8383"
+    android:background="@drawable/background_otp"
     tools:context=".lab1.OTPPhoneNumber">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="330dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="1dp"
-        android:background="#3498db"
+        android:background="#80A6A6A6"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,19 +25,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PhoneNumber:"
-            android:textColor="#FFFFFF"
+            android:textColor="#DCEDFF"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtOTPPhoneNumber"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/input_layout"
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:hint="+84 ....."
             android:inputType="text"
-            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textColor="#172A3A"
             android:textColorHint="#D5D3D3" />
 
         <Button
@@ -45,8 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#3F51B5"
-            android:text="Get OTP" />
+            android:backgroundTint="#004346"
+            android:text="Get OTP"
+            android:textColor="#DCEDFF" />
 
         <TextView
             android:id="@+id/textView8"
@@ -55,19 +59,22 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#FFFFFF"
             android:text="OTP:"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D5D3D3" />
+            android:textColor="#DCEDFF"
+            android:textColorHint="#D5D3D3"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/edtOTP"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/input_layout"
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:hint="123ABC"
             android:inputType="text"
-            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textColor="#172A3A"
             android:textColorHint="#D5D3D3" />
 
         <Button
@@ -75,8 +82,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#3F51B5"
-            android:text="Login" />
+            android:backgroundTint="#004346"
+            android:text="Login"
+            android:textColor="#DCEDFF" />
     </LinearLayout>
 
     <TextView
@@ -84,9 +92,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
+        android:fontFamily="serif"
         android:text="Login With PhoneNumber"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textColor="#172A3A"
+        android:textSize="27dp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"

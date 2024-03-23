@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3498db"
+    android:background="#09BC8A"
     tools:context=".lab1.Login">
 
     <LinearLayout
@@ -12,37 +12,46 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="1dp"
-        android:background="#EF8383"
+        android:background="#172A3A"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView2"
+        <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:text="Login with Us"
-            android:textColor="#FFFFFF"
-            android:textSize="40dp"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="24dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Login with Us"
+            android:textColor="#DCEDFF"
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView7"
@@ -51,20 +60,21 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#FFFFFF"
             android:text="Tên đăng nhập:"
-            android:textColor="#FFFFFF"
+            android:textColor="#DCEDFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtEmailLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/input_layout"
             android:ems="10"
             android:hint="Your Email...."
             android:inputType="text"
-            android:textColor="#FFFFFF" />
+            android:padding="10dp"
+            android:textColor="#DCEDFF" />
 
         <TextView
             android:id="@+id/textView3"
@@ -73,50 +83,53 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#FFFFFF"
             android:text="Mật khẩu:"
-            android:textColor="#FFFFFF"
+            android:textColor="#DCEDFF"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtPassLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
+            android:layout_height="40dp"
+            android:background="@drawable/input_layout"
             android:ems="10"
             android:hint="***************"
             android:inputType="textPassword"
-            android:textColor="#FFFFFF" />
+            android:padding="10dp"
+            android:textColor="#DCEDFF" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="358dp"
-        android:layout_height="104dp"
+        android:layout_height="120dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="1dp"
-        android:orientation="horizontal"
-        android:padding="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
             android:id="@+id/btnLoginEmail"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
-            android:text="Login" />
+            android:backgroundTint="#004346"
+            android:text="Login"
+            android:textColor="#DCEDFF" />
 
         <Button
             android:id="@+id/btnRegister"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:backgroundTint="#3F51B5"
-            android:text="SignUp" />
+            android:backgroundTint="#004346"
+            android:text="SignUp"
+            android:textColor="#DCEDFF" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
