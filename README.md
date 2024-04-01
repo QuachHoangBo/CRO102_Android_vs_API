@@ -4,7 +4,7 @@ Lab2:<done><lms>
 Lab3:<done><lms>
 Lab4:<done><lms>
 Lab5:<working><lms>
-Lab6:<waiting>
+Lab6:<waiting><lms>
 Lab7:<waiting>
 Lab8:<waiting>
 Assignment gd1:<done><lms>
