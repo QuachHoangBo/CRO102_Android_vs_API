@@ -6,13 +6,32 @@ public class Response <T>{
     private String message;
     private T data;
 
+    private String token, refreshToken;
     public Response() {
     }
 
-    public Response(int status, String message, T data) {
+    public Response(int status, String message, T data, String token, String refreshToken) {
         this.status = status;
         this.message = message;
         this.data = data;
+        this.token = token;
+        this.refreshToken = refreshToken;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getRefreshToken() {
+        return refreshToken;
+    }
+
+    public void setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
     }
 
     public int getStatus() {
