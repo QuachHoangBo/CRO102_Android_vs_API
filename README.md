@@ -4,11 +4,11 @@ Lab2:<done><lms>
 Lab3:<done><lms>
 Lab4:<done><lms>
 Lab5:<working><lms>
-Lab6:<waiting><lms>
-Lab7:<waiting><lms>
-Lab8:<waiting>
+Lab6:<working><lms>
+Lab7:<working><lms>
+Lab8:<working><lms>
 Assignment gd1:<done><lms>
-Assignment gd2:<waiting>
+Assignment gd2:<done><lms>
 Assignment Final:<waiting>
 
 cảm ơn vì đã xem!
